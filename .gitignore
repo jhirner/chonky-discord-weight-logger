@@ -1,7 +1,9 @@
 .ipynb
+*checkpoint*
 __pycache__/*
 .env
 weight-log
 *.db
 cache
 directions.txt
+*data/*
