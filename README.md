@@ -26,7 +26,7 @@ Chonky is available as a Python script or with a Dockerfile for containerized im
 		* *Note*: The example Dockerfile is intended for use with amd64 system architecture. For deployment on alternative hardware (e.g.: a Raspberry Pi), you'll need to change the first line of the Dockerfile. One that works well in testing is `FROM leberkaas/python-armed`.
 4. Run Chonky!
 	* *For Python installation*, execute `python3 chonky-dash.py` and `python3 chonky-discord.py`.
-	* *For containerized installation*, execute `docker run --network host --volume ~/GitHub/discord-weight-logger/docker-data/:/data chonky-bot`.
+	* *For containerized installation*, execute `docker run --network host --volume ~/weight-data/:/data chonky-bot`.
 		* The `--network host` flag enables ready access to the dashboard through the host computer's IP address.
 		* the `--volume` flag ensures persistant storage of the database outside of the container. The format is `--volume host-path:container-path`, and may be edited to your needs.
 5. Log your weight in your private Discord server. Chonky will respond with confirmation or an error message.
